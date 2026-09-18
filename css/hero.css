@@ -27,17 +27,21 @@ Reference
     font-weight: 600;
 }
 
+.et-hero-image-cover {
+    background: #0b1f2a;
+}
+
 .et-hero .png-col {
     position: relative;
 }
 
-.et-hero .image-container img {
+.et-hero-image-cover .image-container img {
     filter: grayscale(.72) contrast(1.06);
     object-fit: cover;
     object-position: 50% 78%;
 }
 
-.et-hero .image-container::after {
+.et-hero-image-cover .image-container::after {
     content: "";
     position: absolute;
     inset: 0;
