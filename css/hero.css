@@ -1,0 +1,123 @@
+/** 
+<link rel="stylesheet" href="/media/engineeringtrainer-custom.css">
+*/
+
+.section-padding-bottom-none {
+    padding-bottom: 0 !important;
+}
+
+.et-hero .text-container h5,
+.et-hero .text-container h5 *,
+.et-hero-cta .text-container h5,
+.et-hero-cta .text-container h5 * {
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: #ff681d;
+    font-weight: 400;
+}
+
+.et-hero .text-container h1 strong em {
+    font-weight: 600;
+}
+
+.et-hero {
+    background: #0b1f2a;
+}
+
+.et-hero .png-col {
+    position: relative;
+}
+
+.et-hero .image-container img {
+    filter: grayscale(.72) contrast(1.06);
+    object-fit: cover;
+    object-position: 50% 78%;
+}
+
+.et-hero .image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #0b1f2a 0%, rgba(11, 31, 42, .8) 42%, rgba(11, 31, 42, .78) 62%, #0b1f2a 100%);
+}
+
+.et-hero .o-flexcolumns {
+    position: relative;
+    z-index: 2;
+}
+
+.et-socialproof-facts .png-col3 {
+    border-left: 0;
+}
+
+.et-socialproof-logos .swiper-button-prev,
+.et-socialproof-logos .swiper-button-next,
+.et-socialproof-logos .swiper-pagination {
+    display: none;
+}
+
+@media (min-width: 641px) {
+    .et-hero-cta .et-hero-cta-teams {
+        border-right: 1px solid rgba(5, 25, 65, .18);
+    }
+
+    .et-socialproof-facts .png-col2,
+    .et-socialproof-facts .png-col4 {
+        border-left: 1px solid rgba(5, 25, 65, .18);
+    }
+
+    .et-socialproof-facts {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .et-socialproof-facts .png-col3 {
+        border-left: 1px solid rgba(5, 25, 65, .18);
+    }
+}
+
+.et-socialproof-facts p {
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.et-hero-cta .text-container p {
+    text-wrap: pretty;
+}
+
+.et-hero .text-container p {
+    text-wrap: pretty;
+}
+
+.et-hero-cta .btn-container .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    width: 325px;
+    max-width: 100%;
+}
+
+.et-hero-cta .btn-container .btn::after {
+    content: "→";
+}
+
+.et-hero-cta.row-50-50 {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid rgba(5, 25, 65, .18);
+    border-bottom: 1px solid rgba(5, 25, 65, .18);
+}
+
+@media (max-width: 640px) {
+    .et-hero-cta .btn-container .btn {
+        width: 100%;
+    }
+
+    .et-hero-cta .container .png-row .png-col.et-hero-cta-individuals {
+        border-top: 1px solid rgba(5, 25, 65, .18);
+    }
+}
