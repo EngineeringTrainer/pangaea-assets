@@ -7,5 +7,5 @@ A dedicated static asset repository for **EngineeringTrainer**, providing global
 Use these links directly inside your HTML `<head>` or Pangaea's HTML content block:
 
 ```html
-<link rel="stylesheet" href="...">
+<link rel="stylesheet" href="https://engineeringtrainer.github.io/pangaea-assets/...">
 ```
