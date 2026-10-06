@@ -8,9 +8,6 @@ Reference
 .et-card-primary-border ul.o-macro {
     position: relative;
     overflow: hidden;
-    border: 2px solid #07245f;
-    border-radius: 4px;
-    padding: 34px;
 }
 
 .et-card-primary-border ul.o-macro::before {
