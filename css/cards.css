@@ -1,0 +1,24 @@
+/** 
+<link rel="stylesheet" href="https://engineeringtrainer.github.io/pangaea-assets/css/cards.css">
+
+Reference
+- https://www.engineeringtrainer.com/for-teams/prepare-engineers-for-upcoming-projects
+*/
+
+.et-card-primary-border ul.o-macro {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #07245f;
+    border-radius: 4px;
+    padding: 34px;
+}
+
+.et-card-primary-border ul.o-macro::before {
+    content: "";    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    background: #ff681d;
+}
