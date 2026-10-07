@@ -30,6 +30,10 @@ Load [`css/cards.css`](css/cards.css) to give a Pangaea macro list a dark blue b
 
 Add `et-card-primary-border` to an element containing the card's `ul.o-macro`. The style only applies to macro lists inside that element.
 
+## Tag styles
+
+Load [`css/tags.css`](css/tags.css) after the site's base stylesheet, then add a modifier alongside `et-tags` on the tag-list container. Use `et-tags-large` for larger, orange-filled pills or `et-tags-primary` for the original pills with an orange border. See [`css/tags.md`](css/tags.md) for markup examples.
+
 ## Documentation
 
 The documentation and examples can be found at [EngineeringTrainer's Custom Styleguide](https://www.engineeringtrainer.com/styleguide-custom)

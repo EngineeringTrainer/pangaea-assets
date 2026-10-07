@@ -1,0 +1,22 @@
+/**
+<link rel="stylesheet" href="https://engineeringtrainer.github.io/pangaea-assets/css/tags.css">
+
+Add et-tags and either et-tags-large or et-tags-primary to the tag-list container.
+*/
+
+.et-tags.et-tags-large ul {
+    gap: 10px;
+}
+
+.et-tags.et-tags-large li {
+    padding: 10px 18px;
+    border-color: #ff681d;
+    background: #ff681d;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(7, 36, 95, .16);
+}
+
+.et-tags.et-tags-primary li {
+    border-color: #ff681d;
+}
