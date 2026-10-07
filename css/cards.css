@@ -19,3 +19,99 @@ Reference
     width: 6px;
     background: #ff681d;
 }
+
+/* Three-step card flow using the Pangaea section's et-card-flow class. */
+.et-card-flow .png-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+}
+
+.et-card-flow .png-row > .et-card {
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    float: none;
+    position: relative;
+}
+
+.et-card-flow .png-row > .et-card > ul.o-macro {
+    position: relative;
+    overflow: visible;
+    height: 100%;
+    margin: 0;
+    padding: 36px 40px;
+    border-radius: 0;
+}
+
+.et-card-flow .png-row > .et-card:first-child > ul.o-macro {
+    border-radius: 3px 0 0 3px;
+}
+
+.et-card-flow .png-row > .et-card:last-child > ul.o-macro {
+    border-radius: 0 3px 3px 0;
+}
+
+/* One shared divider between neighboring cards. */
+.et-card-flow .png-row > .et-card + .et-card > ul.o-macro {
+    border-left: 0;
+}
+
+.et-card-flow .png-row > .et-card:not(:last-child) > ul.o-macro::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: #ff681d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / 18px 18px no-repeat;
+}
+
+@media (min-width: 960px) {
+    .et-card-flow .et-card-primary-border > ul.o-macro::before {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        width: auto;
+        height: 6px;
+    }
+}
+
+@media (max-width: 959px) {
+    .et-card-flow .png-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .et-card-flow .png-row > .et-card > ul.o-macro {
+        padding: 36px clamp(20px, 4vw, 40px);
+        border-radius: 0;
+    }
+
+    .et-card-flow .png-row > .et-card:first-child > ul.o-macro {
+        border-radius: 3px 3px 0 0;
+    }
+
+    .et-card-flow .png-row > .et-card:last-child > ul.o-macro {
+        border-radius: 0 0 3px 3px;
+    }
+
+    .et-card-flow .png-row > .et-card + .et-card > ul.o-macro {
+        border-top: 0;
+        border-left: 2px solid #07245f;
+    }
+
+    .et-card-flow .png-row > .et-card:not(:last-child) > ul.o-macro::after {
+        top: auto;
+        right: auto;
+        bottom: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M6 13l6 6 6-6'/%3E%3C/svg%3E");
+    }
+}
