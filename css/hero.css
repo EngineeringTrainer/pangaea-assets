@@ -50,7 +50,7 @@ Reference
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, #0b1f2a 0%, rgba(11, 31, 42, .8) 42%, rgba(11, 31, 42, .78) 62%, #0b1f2a 100%);
+    background: linear-gradient(180deg, rgba(11, 31, 42, .7) 0%, rgba(11, 31, 42, .55) 42%, rgba(11, 31, 42, .55) 62%, rgba(11, 31, 42, .75) 100%);
 }
 
 .et-hero .o-flexcolumns {
