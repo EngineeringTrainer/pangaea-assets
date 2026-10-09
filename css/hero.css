@@ -33,7 +33,7 @@ Reference
 }
 
 .et-hero-image-cover {
-    background: #0b1f2a;
+    background: #051941;
 }
 
 .et-hero .png-col {
@@ -50,7 +50,7 @@ Reference
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(11, 31, 42, .7) 0%, rgba(11, 31, 42, .55) 42%, rgba(11, 31, 42, .55) 62%, rgba(11, 31, 42, .75) 100%);
+    background: linear-gradient(180deg, rgba(5, 25, 65, .85) 0%, rgba(5, 25, 65, .7) 42%, rgba(5, 25, 65, .7) 62%, rgba(5, 25, 65, .9) 100%);
 }
 
 .et-hero .o-flexcolumns {
