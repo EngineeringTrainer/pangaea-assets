@@ -69,7 +69,7 @@ Reference
 }
 
 @media (min-width: 641px) {
-    .et-hero-cta .et-hero-cta-teams {
+    .et-hero-cta .et-hero-cta-left {
         border-right: 1px solid rgba(5, 25, 65, .18);
     }
 
@@ -128,7 +128,7 @@ Reference
         width: 100%;
     }
 
-    .et-hero-cta .container .png-row .png-col.et-hero-cta-individuals {
+    .et-hero-cta .container .png-row .png-col.et-hero-cta-right {
         border-top: 1px solid rgba(5, 25, 65, .18);
     }
 }
